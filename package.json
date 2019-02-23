@@ -1,0 +1,21 @@
+{
+  "name": "homebridge-platform-maxvapor",
+  "version": "0.0.1",
+  "description": "MaxVapor Platform plugin for homebridge",
+  "license": "MIT",
+  "keywords": [
+    "homebridge-plugin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/MAXVapor/homebridge-platform-maxvapor.git"
+  },
+  "bugs": {
+    "url": "http://github.com/MAXVapor/homebridge-platform-maxvapor/issues"
+  },
+  "engines": {
+    "node": ">=0.12.0",
+    "homebridge": ">=0.2.0",
+    "request": ">=2.81.0"
+  }
+}
