@@ -1,30 +1,38 @@
+<p align="center">
+
+<img src="https://github.com/homebridge/branding/raw/master/logos/homebridge-wordmark-logo-vertical.png" width="150">
+
+</p>
 # homebridge-platform-maxvapor
 A [MaxVapor E-Nail](https://maxvapor.com/) platform plugin for [Homebridge](https://github.com/nfarina/homebridge).
 
-# Installation
-Run these commands:
 
-    % sudo npm install -g homebridge
-    % sudo npm install -g homebridge-platform-maxvapor
+# Why Homebridge?
 
-If you install homebridge like this:
+Because of the nature of our device, it is not possible to manufacture with direct support for HomeKit. Using a Homebridge installation with a plugin allows us to provide support for HomeKit without the additional limitations and approval process for certified devices.
 
-    sudo npm install -g --unsafe-perm homebridge
+# GUI Installation
 
-Then all subsequent installations must be like this:
+If you are running a more recent version of Homebridge with GUI support, installing the MaxVapor Plugin is easy.
 
-    sudo npm install -g --unsafe-perm homebridge-platform-maxvapor
+* Navigate to the "Plugins" menu of the Homebridge GUI
+* Search for "maxvapor"
+* Install the "Homebridge Platform Maxvapor" plugin from the search results.
+* You will be asked to supply the API Token for your MaxVapor Dashboard account.
 
-# Configuration
+To obtain an API Token, please login to your existing MaxVapor Dashboard Account, select the `Data Logging` option from the sidebar and `Request a Token` or use one of the existing tokens displayed.
+
+# Manual Installation
+
+Install `homebridge-platform-maxvapor`from NPM.
+
 Edit `~/.homebridge/config.json`, inside `"platforms": [ ... ]` add:
 
-	{
-		"platform"	: "MaxVapor",
-		"name"		: "homebridge-platform-maxvapor",
-		"token"		: ""
-	}
-
-The `token` line must include a valid API Token from the MaxVapor Dashboard.
+    {
+        "token": "",
+        "host": "https://dashboard.maxvapor.com",
+        "platform": "MaxVaporPlugin"
+    }
 
 To obtain an API Token, please login to your existing MaxVapor Dashboard Account, select the `Data Logging` option from the sidebar and `Request a Token` or use one of the existing tokens displayed.
 

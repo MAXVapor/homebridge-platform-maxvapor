@@ -1,7 +1,7 @@
 {
   "displayName": "MaxVapor",
   "name": "homebridge-platform-maxvapor",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "MaxVapor Platform plugin for homebridge",
   "license": "MIT",
   "repository": {
