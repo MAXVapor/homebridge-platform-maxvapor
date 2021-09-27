@@ -1,0 +1,22 @@
+{
+  "pluginAlias": "MaxVaporPlugin",
+  "pluginType": "platform",
+  "singular": true,
+  "schema": {
+    "type": "object",
+    "properties": {
+      "token": {
+        "title": "API Token",
+        "type": "string",
+        "required": true,
+        "default": ""
+      },
+      "host": {
+        "title": "API Gateway",
+        "type": "string",
+        "required": true,
+        "default": "https://dashboard.maxvapor.com"
+      }
+    }
+  }
+}
